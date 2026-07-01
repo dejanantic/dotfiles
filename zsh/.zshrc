@@ -6,6 +6,8 @@ source <(fzf --zsh)
 
 # Aliases
 
+alias vim="nvim"
+
 # eza (better `ls`)
 alias l="eza --icons"
 alias ls="eza --icons"
