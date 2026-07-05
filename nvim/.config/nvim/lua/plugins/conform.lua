@@ -14,6 +14,8 @@ require("conform").setup({
         json = { "prettier" },
         yaml = { "prettier" },
         lua = { "stylua" },
+        sh = { "shfmt" },
+        bash = { "shfmt" },
     },
     format_on_save = {
         timeout_ms = 500,
