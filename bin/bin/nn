@@ -1,0 +1,27 @@
+#!/bin/bash
+
+title="$*"
+
+if [ -z "$title" ]; then
+    echo "Usage: note <title>"
+    exit 1
+fi
+
+slug="${title// /-}"
+slug=$(echo "$slug" | tr '[:upper:]' '[:lower:]')
+date=$(date +%Y-%m-%d)
+filename="${date}-${slug}.md"
+filepath="$HOME/notes/0 Inbox/$filename"
+
+cat >"$filepath" <<EOF
+---
+title: $title
+date: $date
+tags: []
+source: ""
+---
+
+# $title
+EOF
+
+nvim "$filepath"
