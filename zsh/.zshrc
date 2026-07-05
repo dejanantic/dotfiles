@@ -4,6 +4,9 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
+# Personal bin
+export PATH="$HOME/bin:$PATH"
+
 # Aliases
 
 alias vim="nvim"
