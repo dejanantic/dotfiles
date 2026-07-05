@@ -8,4 +8,5 @@ require("which-key").add({
     { "<leader>m", group = "Markdown" },
     { "<leader>n", group = "Notes" },
     { "<leader>f", group = "Find" },
+    { "<leader>t", group = "Table" },
 })
